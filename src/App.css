@@ -1,0 +1,446 @@
+body {
+  background-color: #CF9DC8; 
+  z-index: 1;
+}
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media (max-width: 900px) {
+  body {
+    /* sbackground-color: lightblue;  */
+  }
+  .home {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 768px; /* Adjust the maximum width as needed */
+    margin: 0 auto;    /* Center the container */
+  }
+  .navbarLogo{
+    width: 120% !important;
+    height: 100% !important;
+  }
+}
+.home {
+  position: absolute;
+  width: 100%;
+  height: 100%;/* Adjust the maximum width as needed */
+  margin: 0 auto;    /* Center the container */
+}
+.header-container {
+  position: relative;
+  z-index: 1;
+}
+.ribbon-container {
+  position: relative;
+}
+.ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  opacity: 1.5;
+  background-color: white;
+}
+.navbar {
+  width: 100%; /* Add this line to make the navbar span the full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbarElements {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarElement {
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #B26DAA;
+  font-size: 17px;
+  font-weight: 550;
+  font-family: Comic Sans MS;
+  text-decoration: none;
+}
+
+.ribbon .navbar{
+  display: inline-block;
+}
+.navbarImageContainer{
+  width: 10%;
+  height: 10%;
+  margin-left: 2%;
+}
+.navbarLogo{
+  width: 70%;
+  height: 70%;
+}
+.header-container {
+  position: relative;
+  z-index: 1;
+}
+.headerImage {
+  opacity: 0.5;
+  width: 100%;
+  height: 450px;
+  z-index: 1;
+}
+
+.welcomeText {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0 0 10px purple;
+  font-family: Comic Sans MS;
+  color: white;
+}
+.motto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 20px;
+  font-weight: 550;
+  text-align: center;
+  font-family: Comic Sans MS;
+}
+
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  padding: 30px;
+  list-style: none;
+}
+.dropdownElement{
+  color: #973E8E;
+  font-size: 17px;
+  font-weight: 550;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.dropdown:hover .dropdownMenu {
+  display: block;
+}
+
+/* about */
+.about{
+  margin: 100px;
+}
+.aboutContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+.aboutHeader {
+  margin-top: -20px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 10px purple;
+  text-align: center;
+  font-family: Comic Sans MS;
+}
+.aboutImagesArea{
+  display: flex;
+  align-items: left;
+  margin-right: 20px;
+}
+.about1Image {
+  width: 202.5px;
+  height: 297px;
+  z-index: 1;
+  transform: translate(60%,-05%);
+}
+.about2Image {
+  width: 162px;
+  height: 244px;
+  z-index: 2;
+  transform: translate(-100%,50%);
+}
+.aboutText{
+  font-family: Comic Sans MS;
+  text-align: left;
+  font-weight: 450;
+  font-size: 17px;
+}
+.aboutTextArea{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -10px;
+}
+.ssfoptionSection{
+  background-color: #E0986F;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  height: 525px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.ssfPanelImage {
+  width: 202.5px;
+  height: 297px;
+  margin-top: 90px;
+  cursor: pointer;
+}
+.ssfPanels {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.ssfPanelButton {
+  color: white;
+  background-color: #973E8E;
+  font-family: Comic Sans MS;
+  width: 202.5px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  margin-bottom: 40px;
+  font-weight: 450;
+  cursor: pointer;
+}
+/* mission and vision */
+.missionVision{
+  background-color: #B26DAA;
+  margin-top: 30px;
+  margin-bottom: -60px;
+}
+.missionVisionContent{
+  margin: 40px;
+}
+.missionVisionHeader{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 10px purple;
+  font-family: Comic Sans MS;
+}
+.missionVisionEachSection{
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+/* Enroll */
+.enrollPanel{
+  width: 550px;
+  height: 550px;
+  background-color: white;
+  border-color: white;
+  border-radius: 50%;
+}
+.enrollLogo{
+  width: 150px;
+  height: 300px;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+.enrollContainer{
+  margin: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.enrollContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+.enrollButton {
+  color: white;
+  background-color: #973E8E;
+  font-family: Comic Sans MS;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  margin-bottom: 40px;
+  font-weight: 5000;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Footer */
+.footerBorder{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 130px;
+  margin-right: 130px;
+}
+.footerImage{
+  width: 150px;
+  height: 290px;
+  margin-right: -40px;
+}
+.socialSection{
+  display: flex;
+  flex-direction: row;
+  margin-left: -20px;
+}
+.icon{
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+}
+.footerSections{
+  display: flex;
+  margin: 20px;
+}
+.footer{
+  background-color: #E0986F;
+/* padding is space between content in the section and its 
+border whereas margin is the space outside the border */
+  padding: 60px;
+}
+.footerCol{
+  flex-basis: 33.33%;
+}
+.navigationHeading{
+  font-family: Comic Sans MS;
+  color: purple;
+}
+.navigationContent{
+  font-family: Comic Sans MS;
+  margin-left: -40px;
+}
+.socialInfo{
+  font-family: Comic Sans MS;
+}
+
+/* Card flipper */
+.flipContainer{
+  /* depth (distance from the camera) - used for 3D CSS */
+  perspective: 1000px;  
+}
+.flipper{
+  width: 330px;
+  height: 250px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.front{
+  z-index: 2;
+}
+.back{
+  transform: rotateY(180deg);
+}
+.flipContainer:hover .flipper{
+  transform: rotateY(180deg);
+}
+.cardContent{
+  padding: 20px;
+  background-color: white;
+  font-family: Comic Sans MS;
+  color: purple;
+}
+
+/* enroll form */
+.overlay {
+  /* fixed means it will cover the entire viewport */
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+body.modal-open {
+  /* hide anything out of the current view (stop scrolling) */
+  overflow: hidden;
+}
+.enrollFormContainer{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  background-color: #fff;
+  padding: 40px;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+.enrollName, .enrollEmail, .enrollMessage{
+  margin: 10px;
+  border-width: 2px;
+  border-color: #E0986F;
+}
+.enrollName::placeholder, .enrollEmail::placeholder, .enrollMessage::placeholder{
+  font-family: Comic Sans MS;
+}
+.enrollName, .enrollEmail{
+  width: 250px;
+  height: 20px;
+  border-width: 2px;
+}
+.enrollMessage{
+  width: 450px;
+  height: 150px
+}
+.enrollFormButton {
+  color: white;
+  background-color: #973E8E;
+  font-family: Comic Sans MS;
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  border: none;
+  font-weight: 5000;
+  cursor: pointer;
+  font-size: 13px;
+  margin-left: 10px;
+}
+.enrollFormHeader{
+  margin-top: -5px;
+  font-size: 20px;
+  color: purple;
+  font-family: Comic Sans MS;
+  margin-left: 10px;
+}
