@@ -9,6 +9,7 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+/* jj */
 
 @media (max-width: 900px) {
   body {
@@ -443,4 +444,112 @@ body.modal-open {
   color: purple;
   font-family: Comic Sans MS;
   margin-left: 10px;
+}
+
+/* new */
+.home1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;/* Adjust the maximum width as needed */
+  margin: 0 auto;    /* Center the container */
+}
+.navigationBar {
+  background-color: white;
+  padding: 0rem 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.navigationBarContainer {
+  max-width: 1200px;
+  margin: 0 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logoImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.headerPhoto {
+  opacity: 0.5;
+  width: 100%;
+  height: 450px;
+  z-index: 1;
+}
+
+.headerText {
+  position: absolute; /* Position the heading absolutely within the container */
+  top: 40%; /* Place the heading vertically centered */
+  left: 50%; /* Place the heading horizontally centered */
+  transform: translate(-50%, -50%); /* Center the heading precisely */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 0 0 10px purple;
+  font-family: Comic Sans MS;
+  color: white;
+}
+.headerMotto {
+  position: absolute;
+  z-index: 2;
+  font-weight: 550;
+  text-align: center;
+  font-family: Comic Sans MS;
+  position: absolute; /* Position the heading absolutely within the container */
+  top: 50%; /* Place the heading vertically centered */
+  left: 50%; /* Place the heading horizontally centered */
+  transform: translate(-50%, -50%); /* Center the heading precisely */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  text-align: center;
+  color: black;
+}
+@media (max-width: 900px) {
+  .headerText {
+    font-size: 40px;
+  }
+  .headerText {
+    top: 30%;
+  }
+  .headerMotto {
+    top: 45%;
+  }
+}
+.aboutImg1 {
+  max-width: 80%; /* Set maximum width to 100% of the container */
+  max-height: 80%; /* Set maximum height to 100% of the container */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  /* transform: translate(60%,-05%); */
+}
+.aboutImg2 {
+  max-width: 80%; /* Set maximum width to 100% of the container */
+  max-height: 80%; /* Set maximum height to 100% of the container */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 2;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  /* transform: translate(-100%,50%); */
+}
+.aboutContentContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.aboutItem {
+  flex: 1; /* Each item occupies equal space */
+  min-width: 200px; /* Set a minimum width for each item */
+  padding: 10px; /* Add some spacing */
+  background-color: #ccc; /* Add background color for visualization */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+@media screen and (max-width: 600px) {
+  .aboutItem {
+    flex-basis: 100%; /* Each item takes 100% width */
+  }
 }
