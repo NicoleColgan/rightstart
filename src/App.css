@@ -518,38 +518,73 @@ body.modal-open {
     top: 45%;
   }
 }
+
+/* about */
 .aboutImg1 {
   max-width: 80%; /* Set maximum width to 100% of the container */
   max-height: 80%; /* Set maximum height to 100% of the container */
   height: auto; /* Maintain aspect ratio */
   z-index: 1;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  /* transform: translate(60%,-05%); */
 }
 .aboutImg2 {
   max-width: 80%; /* Set maximum width to 100% of the container */
   max-height: 80%; /* Set maximum height to 100% of the container */
   height: auto; /* Maintain aspect ratio */
   z-index: 2;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-  /* transform: translate(-100%,50%); */
 }
 .aboutContentContainer{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .aboutItem {
   flex: 1; /* Each item occupies equal space */
   min-width: 200px; /* Set a minimum width for each item */
   padding: 10px; /* Add some spacing */
-  background-color: #ccc; /* Add background color for visualization */
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
+  text-align: center; /* Center the content horizontally */
 }
 @media screen and (max-width: 600px) {
   .aboutItem {
     flex-basis: 100%; /* Each item takes 100% width */
   }
+}
+.aboutTitle {
+  font-size: 35px;
+  color: white;
+  text-shadow: 0 0 10px purple;
+  text-align: center;
+  font-family: Comic Sans MS;
+}
+.aboutTitleContainer {
+  margin: auto;
+}
+/* mission and vision */
+/* .missionVision{
+  background-color: #B26DAA;
+  margin-top: 30px;
+  margin-bottom: -60px;
+}
+.missionVisionContent{
+  margin: 40px;
+}
+.missionVisionHeader{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: white;
+  text-shadow: 0 0 10px purple;
+  font-family: Comic Sans MS;
+}
+.missionVisionEachSection{
+  margin-top: 40px;
+  margin-bottom: 60px;
+} */
+/* Mission and vision section */
+.missionVisionContainer {
+  background-color: #B26DAA;
+  margin-top: 30px;
+  margin-bottom: -60px;
 }

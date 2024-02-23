@@ -435,7 +435,9 @@ const Landing = () => {
       </div>
 
       <div class="aboutContainer">
-        <h1 class="aboutHeading">About</h1>
+        <div class="aboutTitleContainer">
+          <h2 class="aboutTitle">About Us</h2>
+        </div>
         <div class="aboutContentContainer">
           <div class="aboutItem">
             <img src="baking.jpg" class = "aboutImg1"></img>
@@ -460,6 +462,10 @@ const Landing = () => {
             <img src = "garden.jpg" class= "aboutImg2"></img>
           </div>
         </div>
+      </div>
+
+      <div class="missionVisionContainer">
+        <h1>hi</h1>
       </div>
     </div>
   );
