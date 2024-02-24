@@ -176,7 +176,7 @@ html {
   z-index: 2;
   transform: translate(-100%,50%);
 }
-.aboutText{
+.paragraphs{
   font-family: Comic Sans MS;
   text-align: left;
   font-weight: 450;
@@ -336,40 +336,6 @@ border whereas margin is the space outside the border */
   font-family: Comic Sans MS;
 }
 
-/* Card flipper */
-.flipContainer{
-  /* depth (distance from the camera) - used for 3D CSS */
-  perspective: 1000px;  
-}
-.flipper{
-  width: 330px;
-  height: 250px;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-}
-.front,
-.back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-.front{
-  z-index: 2;
-}
-.back{
-  transform: rotateY(180deg);
-}
-.flipContainer:hover .flipper{
-  transform: rotateY(180deg);
-}
-.cardContent{
-  padding: 20px;
-  background-color: white;
-  font-family: Comic Sans MS;
-  color: purple;
-}
 
 /* enroll form */
 .overlay {
@@ -445,6 +411,21 @@ body.modal-open {
   font-family: Comic Sans MS;
   margin-left: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* new */
 .home1 {
@@ -532,7 +513,7 @@ body.modal-open {
   height: auto; /* Maintain aspect ratio */
   z-index: 2;
 }
-.aboutContentContainer{
+.flexContainer{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -551,7 +532,7 @@ body.modal-open {
     flex-basis: 100%; /* Each item takes 100% width */
   }
 }
-.aboutTitle {
+.h2Titles {
   font-size: 35px;
   color: white;
   text-shadow: 0 0 10px purple;
@@ -561,30 +542,108 @@ body.modal-open {
 .aboutTitleContainer {
   margin: auto;
 }
-/* mission and vision */
-/* .missionVision{
-  background-color: #B26DAA;
-  margin-top: 30px;
-  margin-bottom: -60px;
-}
-.missionVisionContent{
-  margin: 40px;
-}
-.missionVisionHeader{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 40px;
-  color: white;
-  text-shadow: 0 0 10px purple;
-  font-family: Comic Sans MS;
-}
-.missionVisionEachSection{
-  margin-top: 40px;
-  margin-bottom: 60px;
-} */
-/* Mission and vision section */
 .missionVisionContainer {
   background-color: #B26DAA;
-  margin-top: 30px;
-  margin-bottom: -60px;
+}
+.missionVisionContentContainer {
+  padding: 2% 5%;
+  text-align: center;
+}
+
+/* Card flipper */
+.flipContainer{
+  /* depth (distance from the camera) - used for 3D CSS */
+  perspective: 1000px;  
+}
+.flipper{
+  width: 330px;
+  height: 250px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.front{
+  z-index: 2;
+}
+.back{
+  transform: rotateY(180deg);
+}
+.flipContainer:hover .flipper{
+  transform: rotateY(180deg);
+}
+.cardContent{
+  padding: 20px;
+  background-color: white;
+  font-family: Comic Sans MS;
+  color: purple;
+}
+
+/* mine */
+.panel {
+  width: calc(33.33% - 20px); /* Set the width of the panel to one-third of the container minus margin */
+  height: auto; /* Let the height adjust automatically based on content */
+  margin: 10px; /* Add some margin between panels */
+  perspective: 1000px; /* Perspective for 3D effect */
+  display: flex; /* Use flexbox to center the content */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+
+.panel img {
+  max-width: 100%; /* Ensure images don't exceed the width of their containers */
+  height: auto; /* Maintain aspect ratio */
+}
+@media screen and (max-width: 600px) {
+  .panel {
+    width: calc(100% - 20px); /* Set the width of the panel to full width of the container minus margin */
+  }
+}
+.ssfContainer{
+  background-color: #E0986F;
+  margin: 5%
+}
+flexContainer
+
+/* old */
+.ssfoptionSection{
+  background-color: #E0986F;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  height: 525px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.ssfPanelImage {
+  width: 202.5px;
+  height: 297px;
+  margin-top: 90px;
+  cursor: pointer;
+}
+.ssfPanels {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.ssfPanelButton {
+  color: white;
+  background-color: #973E8E;
+  font-family: Comic Sans MS;
+  width: 202.5px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  margin-bottom: 40px;
+  font-weight: 450;
+  cursor: pointer;
 }

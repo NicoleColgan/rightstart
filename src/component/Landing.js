@@ -436,36 +436,93 @@ const Landing = () => {
 
       <div class="aboutContainer">
         <div class="aboutTitleContainer">
-          <h2 class="aboutTitle">About Us</h2>
+          <h2 class="h2Titles">About Us</h2>
         </div>
-        <div class="aboutContentContainer">
+        <div class="flexContainer">
           <div class="aboutItem">
-            <img src="baking.jpg" class = "aboutImg1"></img>
+            <img src="baking.jpg" class="aboutImg1"></img>
           </div>
-          <div class="aboutText aboutItem">
+          <div class="paragraphs aboutItem">
             <p>At Right Start Montessori we have been providing a homely, warm,
-               and safe environment for over 14 years in our privately owned
-               setting in Curraghmore, Kiltoom, Athlone.
-               <br></br>
-               <br></br>To ensure high quality standards we follow the Montessori
-               philosophy on education along with the Aistear and Siolta
-               Frameworks. Using both approaches assists us with supporting the
-               overall holistic development of each child which empowers them to
-               actively pursue their own learning.
-               <br></br>
-               <br id="mission"></br>We also understand the importance of
-               children connecting with nature and incorporate outdoor play and
-               work within our curriculum to allow children experience this
-               exciting environment and all it offers.{" "}</p>
+              and safe environment for over 14 years in our privately owned
+              setting in Curraghmore, Kiltoom, Athlone.
+              <br></br>
+              <br></br>To ensure high quality standards we follow the Montessori
+              philosophy on education along with the Aistear and Siolta
+              Frameworks. Using both approaches assists us with supporting the
+              overall holistic development of each child which empowers them to
+              actively pursue their own learning.
+              <br></br>
+              <br id="mission"></br>We also understand the importance of
+              children connecting with nature and incorporate outdoor play and
+              work within our curriculum to allow children experience this
+              exciting environment and all it offers.{" "}</p>
           </div>
-          <div class = "aboutItem">
-            <img src = "garden.jpg" class= "aboutImg2"></img>
+          <div class="aboutItem">
+            <img src="garden.jpg" class="aboutImg2"></img>
           </div>
         </div>
       </div>
 
       <div class="missionVisionContainer">
-        <h1>hi</h1>
+        <div class="missionVisionContentContainer">
+          <div class="missionContainer">
+            <h2 class="h2Titles">Our Mission</h2>
+            <p class="paragraphs">At Right Start Montessori we understand that building positive
+              relationships with parents, families, and the wider community,
+              plays an important role in the holistic development of each child.
+              That said we also understand that communication is a key element
+              in fostering children`s learning, while sharing information and
+              parental involvement are also necessary components. This in turn
+              allows for each child have a sense of identity and belonging,
+              enriching their overall holistic development.
+            </p>
+          </div>
+          <br></br>
+          <div class="visionContainer">
+            <h2 class="h2Titles">Our Vision</h2>
+            <p class="paragraphs">At Right Start Montessori we appreciate that each child is unique
+              whilst understanding that a positive early childhood experience is
+              instrumental for a child’s overall development throughout their
+              lives. We ensure that each child feels loved, respected, and is
+              encouraged to develop to his/her best potential so that they can
+              flourish and become the best possible version of themselves.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* staff, services, subsedies and fees */}
+      <div class="ssfContainer">
+        <div class="flexContainer">
+
+          <div class="panel">
+            <div class="panel-front">
+              <img src="garden.jpg" alt="Front" class="flipperImages"></img>
+            </div>
+            <div class="panel-back">
+              <p>Back Content Here</p>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-front">
+              <img src="garden.jpg" alt="Front" class="flipperImages"></img>
+            </div>
+            <div class="panel-back">
+              <p>Back Content Here</p>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-front">
+              <img src="garden.jpg" alt="Front" class="flipperImages"></img>
+            </div>
+            <div class="panel-back">
+              <p>Back Content Here</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   );
