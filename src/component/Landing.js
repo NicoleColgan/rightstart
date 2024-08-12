@@ -95,7 +95,7 @@ const Landing = () => {
                   onClick={handleSubmit}
                   class="enrollFormButton"
                 >
-                  Enroll
+                  Send
                 </button>
                 <button onClick={handleCancel} class="enrollFormButton">
                   Cancel
@@ -275,7 +275,7 @@ const Landing = () => {
               <h3>Contact Us</h3>
               <li>Curraghmore, Kiltoom, Athlone, Co. Roscommon, Athlone, Ireland, N37 WY86</li><br></br>
               <li>+353 863704370</li><br></br>
-              <li>marionmulkearncolgan@gmail.com</li><br></br>
+              <li><a href="#" onClick={handleEnrollButtonClick}>Mail</a></li><br></br>
               <li><a href="https://www.facebook.com/rightstartmontessori1/">Facebook</a></li>
             </ul>
           </div>
