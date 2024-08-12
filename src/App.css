@@ -257,6 +257,7 @@ html {
   height: 300px;
   margin: 20px;
   margin-bottom: 40px;
+  padding: 5%;
 }
 .enrollContainer{
   margin: 80px;
@@ -275,11 +276,10 @@ html {
   color: white;
   background-color: #973E8E;
   font-family: Comic Sans MS;
-  width: 250px;
-  height: 50px;
   text-align: center;
   border: none;
   margin-bottom: 40px;
+  padding: 2%;
   font-weight: 5000;
   cursor: pointer;
   font-size: 17px;
@@ -397,7 +397,6 @@ body.modal-open {
   font-family: Comic Sans MS;
   width: 50px;
   height: 25px;
-  text-align: center;
   border: none;
   font-weight: 5000;
   cursor: pointer;
@@ -433,6 +432,8 @@ body.modal-open {
   width: 100%;
   height: 100%;/* Adjust the maximum width as needed */
   margin: 0 auto;    /* Center the container */
+  left: 0;
+  right: 0;
 }
 .navigationBar {
   background-color: white;
@@ -442,7 +443,7 @@ body.modal-open {
 }
 
 .navigationBarContainer {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 0;
   display: flex;
   justify-content: flex-start;
@@ -518,6 +519,7 @@ body.modal-open {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-items: stretch;  /* Ensures all children stretch to the same height */
 }
 .aboutItem {
   flex: 1; /* Each item occupies equal space */
@@ -531,6 +533,9 @@ body.modal-open {
   .aboutItem {
     flex-basis: 100%; /* Each item takes 100% width */
   }
+  .footerLogo{
+    width: 50%;
+  }
 }
 .h2Titles {
   font-size: 35px;
@@ -540,7 +545,7 @@ body.modal-open {
   font-family: Comic Sans MS;
 }
 .aboutTitleContainer {
-  margin: auto;
+  width: 100%;
 }
 .missionVisionContainer {
   background-color: #B26DAA;
@@ -594,11 +599,13 @@ body.modal-open {
   display: flex; /* Use flexbox to center the content */
   align-items: center; /* Center the content vertically */
   justify-content: center; /* Center the content horizontally */
+  align-items: stretch; /* Stretch flex items to match the height of the tallest item */
 }
 
 .panel img {
   max-width: 100%; /* Ensure images don't exceed the width of their containers */
   height: auto; /* Maintain aspect ratio */
+  cursor: pointer;
 }
 @media screen and (max-width: 600px) {
   .panel {
@@ -607,9 +614,18 @@ body.modal-open {
 }
 .ssfContainer{
   background-color: #E0986F;
-  margin: 5%
+  margin: 5%;
 }
-flexContainer
+.servicesBannerDiv {
+  color: white;
+  background-color: #973E8E;
+  text-align: center;
+  font-family: Comic Sans MS;
+  font-weight: 450;
+  padding: 3%;
+  font-size: 17px;
+}
+
 
 /* old */
 .ssfoptionSection{
@@ -647,3 +663,88 @@ flexContainer
   font-weight: 450;
   cursor: pointer;
 }
+.panelText {
+  background-color: white;
+  padding: 5%;
+}
+.footer {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap; /* Allows content to wrap on small screens */
+  justify-content: center; /* Centers the child divs horizontally */
+  align-items: center; /* Vertically centers the content within the footer */
+}
+
+.footerBackground {
+  background-color: #E0986F;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.footer-left, .footer-right {
+  flex: 1; /* Ensures both divs take up equal space */
+  display: flex;
+  align-items: center; /* Vertically centers the content within each div */
+  max-width: 50%; /* Prevents each div from taking more than half of the footer's width */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.footer-left {
+  justify-content: flex-end; /* Aligns the logo to the right within the left div */
+  padding-right: 10px; /* Adds some space between the image and the text on larger screens */
+}
+
+.footer-right {
+  justify-content: flex-start; /* Aligns the text to the left within the right div */
+  padding-left: 10px; /* Adds some space between the image and the text on larger screens */
+}
+
+.footerLogo {
+  width: 10%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .footer-left {
+      display: none; /* Hides the image div on small screens */
+  }
+
+  .footer-right {
+      max-width: 100%; /* Allows the right div to take full width on small screens */
+      justify-content: center; /* Centers the text within the right div on small screens */
+      text-align: center; /* Ensures the text is centered */
+  }
+}
+
+/* New CSS to remove bullet points */
+.contact-list {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+
+.container {
+  max-width: 100%;
+  width: 100vw;
+}
+.element {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
